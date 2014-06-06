@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Using a Table Layout</title>
+  <style type="text/css">
+    body
+    {
+      background-color: Gray;
+    }
+    
+    label
+    {
+      position: relative;
+      float: left;
+      width: 10em;
+    }
+    
+    fieldset
+    {
+      position: relative;
+      margin: 1em 0px 1em 0px;
+      padding: 1em 1em 1em 1em;
+      border: solid 0.075em black;
+    }
+    
+    legend
+    {
+      top: 0.2em;
+      left: 0.5em;
+      font-size: medium;
+      font-weight: normal;
+      margin-left: -0.5em;
+      margin-bottom: 1em;
+      padding-left: 0.3em;
+      padding-right: 0.3em;
+      background-color: white;
+      border: solid 0.075em black;
+    }
+  </style>
+</head>
+<body>
+  <h1>
+    Using a Table Layout</h1>
+  <fieldset>
+    <legend>Please Enter Your Personal Information</legend>
+    <table>
+      <tr>
+        <td>
+          <label for="txtFirst">
+            First Name</label>
+        </td>
+        <td>
+          <input type="text" autofocus required name="txtFirst" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="txtLast">
+            Last Name</label>
+        </td>
+        <td>
+          <input type="text" required name="txtLast" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="txtEmail">
+            Email Address</label>
+        </td>
+        <td>
+          <input type="email" required name="txtEmail" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="txtCellPhone">
+            Cell Phone</label>
+        </td>
+        <td>
+          <input type="tel" name="txtCellPhone" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+        </td>
+        <td>
+          <input type="submit" />
+        </td>
+      </tr>
+    </table>
+  </fieldset>
+</body>
+</html>

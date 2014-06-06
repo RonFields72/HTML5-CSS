@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Scale</title>
+  <style type="text/css">
+    div.outer
+    {
+      position: absolute;
+      top: 2em;
+      left: 2em;
+      width: 2em;
+      height: 2em;
+      background-color: Blue;
+    }
+    div.scaled
+    {
+      position: absolute;
+      top: 2em;
+      left: 4em;
+      background-color: Red;
+      width: 2em;
+      height: 2em;
+      transform: scale(2,3); /* width, height */
+      -ms-transform: scale(2,3); /* IE 9 */
+      -webkit-transform: scale(2,3); /* Safari and Chrome */
+      -o-transform: scale(2,3); /* Opera */
+      -moz-transform: scale(2,3); /* Firefox */
+    }
+  </style>
+</head>
+<body>
+  <div class="outer">
+    <div class="scaled">
+    </div>
+  </div>
+</body>
+</html>

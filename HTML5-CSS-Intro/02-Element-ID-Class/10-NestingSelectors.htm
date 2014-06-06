@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Nesting Selectors</title>
+  <style type="text/css">
+    body
+    {
+      background-color: Gray;
+    }
+    div
+    {
+      color: White;
+    }
+    p
+    {
+      color: Black;
+    }
+    .changedDiv
+    {
+      background-color: Blue;
+    }
+    .changedDiv p
+    {
+      color: White;
+    }
+  </style>
+</head>
+<body>
+  <div>
+  <p>This is a normal &lt;p&gt; tag</p>
+    <div class="changedDiv">
+    <p>This is a &lt;p&gt; tag inside the 'changedDiv'</p>
+    </div>
+  </div>
+</body>
+</html>

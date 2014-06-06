@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Transitions Rotate and Size</title>
+  <style type="text/css">
+    div
+    {
+      width: 6em;
+      height: 6em;
+      background-color: blue;
+      transition: width 2s, height 2s;
+      -moz-transition: width 2s, height 2s, -moz-transform 2s; /* Firefox 4 */
+      -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari and Chrome */
+      -o-transition: width 2s, height 2s, -o-transform 2s; /* Opera */
+    }
+    div:hover
+    {
+      width: 10em;
+      height: 10em;
+      transform: rotate(180deg);
+      -moz-transform: rotate(180deg); /* Firefox 4 */
+      -webkit-transform: rotate(180deg); /* Safari and Chrome */
+      -o-transform: rotate(180deg); /* Opera */
+    }
+  </style>
+</head>
+<body>
+  <p>
+    Hover over blue box below to see the transition.</p>
+  <div>
+  </div>
+</body>
+</html>

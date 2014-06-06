@@ -1,0 +1,17 @@
+﻿p
+{
+  margin: 1em 1em 1em 1em;
+}
+header
+{
+  margin: 1em 1em 1em 1em;
+}
+footer
+{
+  clear: both;
+  position: absolute;
+  width: 98%;
+  bottom: 0.5em;
+  font-size: small;
+  margin: 1em 1em 1em 0.5em;
+}

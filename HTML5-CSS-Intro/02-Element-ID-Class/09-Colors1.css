@@ -1,0 +1,18 @@
+﻿body
+{
+  background-color: Gray;
+}
+h1
+{
+  color: Black;
+}
+p
+{
+  color: Black;
+  opacity: .8;
+}
+footer
+{
+  color: White;
+  background-color: Black;
+}

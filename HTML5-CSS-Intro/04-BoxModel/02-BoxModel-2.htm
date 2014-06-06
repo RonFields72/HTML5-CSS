@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Box Model #2</title>
+  <style type="text/css">
+    /* NOTE: You can use 'border-box' and 'content-box'. */
+    /*       'border-box' uses the traditional box model defined as: The width between the borders of the box, INCLUDING padding and border. */
+    /*       'content-box' will use W3C model defined as: The width between the borders of the box EXCLUDING the padding and border */
+    .BoxModelTest
+    {
+      border: 20px solid;
+      padding: 30px;
+      width: 300px;
+      box-sizing: border-box;
+      -o-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box; 
+      
+      /*
+      box-sizing: content-box;
+      -o-box-sizing: content-box;
+      -moz-box-sizing: content-box;
+      -webkit-box-sizing: content-box;
+      */
+    }
+  </style>
+</head>
+<body>
+  <div class="BoxModelTest">
+    This is a test of a box
+  </div>
+  <div style="width: 400px; background-color: Red; height: 20px;">
+    400 pixels</div>
+  <div style="width: 300px; background-color: Blue; color: White; height: 20px;">
+    300 pixels</div>
+</body>
+</html>

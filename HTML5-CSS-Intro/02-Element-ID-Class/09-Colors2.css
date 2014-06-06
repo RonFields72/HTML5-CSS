@@ -1,0 +1,17 @@
+﻿body
+{
+  background-color: Teal;
+}
+h1
+{
+  color: White;
+}
+p
+{
+  color: Blue;
+}
+footer
+{
+  color: Yellow;
+  background-color: Blue;
+}

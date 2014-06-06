@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Position Property</title>
+</head>
+<body style="background-color: Gray; color: Black;">
+  <h1>
+    Position Property
+  </h1>
+  <ul>
+    <li>static: Elements display in the order they are listed in the HTML. This is the
+      default.</li>
+    <li>absolute: Element is display relative to the first parent element that can be
+      found that is NOT static. If not found, then the &lt;html&gt; tag is the containing
+      parent.</li>
+    <li>fixed: Element is displayed relative to the browser window. Does not move even
+      if window is scrolled.</li>
+    <li>relative: Element is displayed relative to its normal position. If 'left:2em'
+      is specified then 2 em's are added to the element's normal left position.</li>
+  </ul>
+  <hr />
+  <div style="position: fixed; width: 50em; height: 11em; margin: 0; left: 0em; border: 0.2em solid black;">
+    <h3>
+      Normal h3 tag</h3>
+    <h3 style="position: relative; left: 5em">
+      Relative h3 tag with left set to 5em</h3>
+    <h3 style="position: relative; left: -5em">
+      Relative h3 tag with left set to -5em</h3>
+    <h3 style="position: absolute; left: 12em">
+      Absolute h3 tag set to 12em
+    </h3>
+  </div>
+  <div style="position: fixed; width: 30em; height: 10em; margin: 0; left: 5em; top: 25em;
+    border: 0.2em solid black; background-color: Blue; color: White;">
+    <h3>
+      Static h3 tag within fixed &lt;div&gt;</h3>
+    <h3 style="position: absolute; left: 10em">
+      Absolute h3 tag set to 10em, within fixed &lt;div&gt;
+    </h3>
+    <p style="position: relative; left: 2em">
+      Relative &lt;p&gt; tag at left 2em</p>
+  </div>
+  <!-- Notice the z-index -->
+  <div style="position: fixed; width: 4em; height: 4em; margin: 30; left: 30em; top: 33em;
+    border: 0.2em solid blue; background-color: Red; z-index: -1"></div>
+</body>
+</html>

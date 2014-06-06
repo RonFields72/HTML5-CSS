@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Transitions - Left Property</title>
+  <style type="text/css">
+    div
+    {
+      position: absolute;
+      left: 1em;
+      width: 6em;
+      height: 6em;
+      background-color: blue;
+      transition-property: left;
+      transition-duration: 1s;
+      transition-timing-function: linear;
+      transition-delay: 0.5s; /* Firefox 4 */
+      -moz-transition-property: left;
+      -moz-transition-duration: 1s;
+      -moz-transition-timing-function: linear;
+      -moz-transition-delay: 0.5s; /* Safari and Chrome */
+      -webkit-transition-property: left;
+      -webkit-transition-duration: 1s;
+      -webkit-transition-timing-function: linear;
+      -webkit-transition-delay: 0.5s; /* Opera */
+      -o-transition-property: left;
+      -o-transition-duration: 1s;
+      -o-transition-timing-function: linear;
+      -o-transition-delay: 0.5s;
+    }
+    
+    div:hover
+    {
+      left: 12em;
+    }
+  </style>
+</head>
+<body>
+  <p>
+    Hover over blue box below to see the transition.</p>
+  <div></div>
+</body>
+</html>
